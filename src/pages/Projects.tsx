@@ -8,7 +8,7 @@ const Projects = () => {
         <div className="max-w-7xl mx-auto px-5 text-center">
 
           <h1 className="text-4xl md:text-6xl font-black mb-6">
-            Repositorio de Proyectos
+            Repositorio Profesional de Proyectos
           </h1>
 
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
