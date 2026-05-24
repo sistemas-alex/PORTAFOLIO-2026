@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Nueva paleta profesional */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+
+    /* Color de acento - Cyan profesional #15B8D1 */
+    --primary: 188 82% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Fondos alternos #F4F5F6 */
+    --secondary: 210 11% 96%;
+    --secondary-foreground: 0 0% 13%;
+
+    --muted: 210 11% 96%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 188 82% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 11% 90%;
+    --input: 210 11% 90%;
+    --ring: 188 82% 45%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --section-alt: 210 11% 96%;
+    --text-primary: 0 0% 13%;
+    --text-secondary: 0 0% 40%;
+    --icon-primary: 188 82% 45%;
+    --whatsapp: 142 70% 45%;
+    --whatsapp-hover: 142 70% 38%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 40%;
+    --sidebar-primary: 188 82% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 11% 96%;
+    --sidebar-accent-foreground: 0 0% 13%;
+    --sidebar-border: 210 11% 90%;
+    --sidebar-ring: 188 82% 45%;
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 11%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 11%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 188 82% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 188 82% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 188 82% 50%;
+
+    --section-alt: 0 0% 10%;
+    --text-primary: 0 0% 95%;
+    --text-secondary: 0 0% 60%;
+    --icon-primary: 188 82% 55%;
+
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 188 82% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 188 82% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    @apply tracking-tight;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-6xl mx-auto px-5 sm:px-8 lg:px-10 py-16 md:py-24;
+  }
+
+  .section-title {
+    @apply text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4 relative inline-block;
+  }
+
+  .section-title::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-16 h-1 bg-primary rounded-full -mb-3;
+  }
+
+  .section-alt-bg {
+    background-color: hsl(var(--section-alt));
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30;
+  }
+
+  .icon-circle {
+    @apply w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary transition-all duration-300;
+  }
+
+  .whatsapp-btn {
+    @apply inline-flex items-center gap-3 px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-base;
+    background-color: hsl(var(--whatsapp));
+  }
+
+  .whatsapp-btn:hover {
+    background-color: hsl(var(--whatsapp-hover));
+  }
+
+  .cta-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-white bg-primary transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
+  }
+
+  .cta-primary:hover {
+    @apply bg-primary/90;
+  }
+
+  .timeline-item {
+    @apply relative pl-8 pb-8 border-l-2 border-primary/30 last:pb-0;
+  }
+
+  .timeline-dot {
+    @apply absolute left-0 top-0 w-4 h-4 rounded-full bg-primary -translate-x-[9px] ring-4 ring-primary/20;
+  }
+
+  .skill-badge {
+    @apply px-4 py-2 rounded-lg text-sm font-medium bg-primary/10 text-primary border border-primary/20 transition-all duration-200 hover:bg-primary/20;
+  }
+
+  .contact-link {
+    @apply flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors duration-200;
+  }
+
+  .nav-link {
+    @apply text-sm font-medium text-muted-foreground hover:text-primary transition-all duration-200 relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
