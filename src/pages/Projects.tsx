@@ -374,6 +374,7 @@ const Projects = () => {
                   React, TailwindCSS y herramientas de IA para diseño y
                   desarrollo web interactivo.
                 </p>
+
               </div>
             </div>
           </div>
