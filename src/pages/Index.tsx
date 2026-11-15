@@ -6,6 +6,7 @@ import CoursesSection from "@/components/CoursesSection";
 import SkillsSection from "@/components/SkillsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import ProjectsSection from "../components/ProjectsSection";
 
 const Index = () => {
   return (
