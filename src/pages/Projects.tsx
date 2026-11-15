@@ -85,6 +85,45 @@ const Projects = () => {
           </h2>
 
           <div className="grid lg:grid-cols-2 gap-10">
+
+          {/* Proyecto Conciliacion: Plataforma Sistemas Majovit */}
+            <div className="bg-card border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-5">
+                  Plataforma Sistemas Majovit
+                </h3>
+
+                <div className="rounded-2xl overflow-hidden border border-border mb-6">
+                  <iframe
+                    title="Sistemas Majovit"
+                    width="100%"
+                    height="400"
+                    src="https://sistemas-majovit.vercel.app"
+                    frameBorder="0"
+                  ></iframe>
+                </div>
+
+                <p className="text-muted-foreground leading-relaxed mb-5">
+                  Plataforma desarrollada con tecnologías modernas utilizando
+                  React, TailwindCSS y herramientas de IA para diseño y
+                  desarrollo web interactivo.
+                </p>
+
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href="https://sistemas-majovit.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-cyan-500 text-white text-sm font-medium hover:bg-cyan-400 transition-all"
+                  >
+                    Abrir Aplicación
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+
             {/* Proyecto Nuevo 1: InventarioPro CRUD */}
             <div className="bg-card border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
               <div className="p-6">
