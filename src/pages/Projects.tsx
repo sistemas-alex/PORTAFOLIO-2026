@@ -85,46 +85,52 @@ const Projects = () => {
           </h2>
 
           <div className="grid lg:grid-cols-2 gap-10">
-
-          {/* Proyecto Conciliacion: Plataforma Sistemas Majovit */}
+            {/* Proyecto Destacado: Sistema de Conciliación Bancaria */}
             <div className="bg-card border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-5">
-                  Plataforma Sistemas Majovit
+                  Sistema de Conciliación Bancaria Automática
                 </h3>
 
                 <div className="rounded-2xl overflow-hidden border border-border mb-6">
                   <iframe
-                    title="Sistemas Majovit"
+                    title="Sistema de Conciliación Bancaria Automática"
                     width="100%"
                     height="400"
-                    src="https://sistemas-majovit.vercel.app"
+                    src="https://sistemas-alex.github.io/Sistema-de-Conciliaci-n-Bancaria-Automatica/"
                     frameBorder="0"
                   ></iframe>
                 </div>
 
                 <p className="text-muted-foreground leading-relaxed mb-5">
-                  Plataforma desarrollada con tecnologías modernas utilizando
-                  React, TailwindCSS y herramientas de IA para diseño y
-                  desarrollo web interactivo.
+                  Aplicación web contable que cruza extractos bancarios y libros
+                  auxiliares (.xlsx/.csv) en el navegador mediante 5 reglas de
+                  auditoría, cálculo exacto en centavos, gráficas Chart.js y
+                  exportación a Excel y PDF.
                 </p>
 
                 <div className="flex flex-wrap gap-3">
                   <a
-                    href="https://sistemas-majovit.vercel.app"
+                    href="https://sistemas-alex.github.io/Sistema-de-Conciliaci-n-Bancaria-Automatica/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-cyan-500 text-white text-sm font-medium hover:bg-cyan-400 transition-all"
                   >
                     Abrir Aplicación
                   </a>
+                  <a
+                    href="https://github.com/sistemas-alex/Sistema-de-Conciliaci-n-Bancaria-Automatica"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-border text-sm font-medium hover:border-cyan-400 hover:text-cyan-400 transition-all"
+                  >
+                    Ver Código GitHub
+                  </a>
                 </div>
               </div>
             </div>
 
-
-
-            {/* Proyecto Nuevo 1: InventarioPro CRUD */}
+            {/* Proyecto 1: InventarioPro CRUD */}
             <div className="bg-card border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-5">
@@ -169,7 +175,7 @@ const Projects = () => {
               </div>
             </div>
 
-            {/* Proyecto Nuevo 2: Tablero Kanban & API */}
+            {/* Proyecto 2: Tablero Kanban & API */}
             <div className="bg-card border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-5">
@@ -213,7 +219,7 @@ const Projects = () => {
               </div>
             </div>
 
-            {/* Proyecto Nuevo 3: Simulador Financiero */}
+            {/* Proyecto 3: Simulador Financiero */}
             <div className="bg-card border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-5">
@@ -258,7 +264,7 @@ const Projects = () => {
               </div>
             </div>
 
-            {/* Proyecto Nuevo 4: Landing Page Servicios Digitales */}
+            {/* Proyecto 4: Landing Page Servicios Digitales */}
             <div className="bg-card border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-5">
@@ -302,7 +308,7 @@ const Projects = () => {
               </div>
             </div>
 
-            {/* Proyecto Nuevo 5: Automatizador ETL en Python */}
+            {/* Proyecto 5: Automatizador ETL en Python */}
             <div className="bg-card border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-5">
@@ -403,17 +409,27 @@ const Projects = () => {
                     title="Sistemas Majovit"
                     width="100%"
                     height="400"
-                    src="https://sistemas-majovit.lovable.app"
+                    src="https://sistemas-majovit.vercel.app"
                     frameBorder="0"
                   ></iframe>
                 </div>
 
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed mb-5">
                   Plataforma desarrollada con tecnologías modernas utilizando
                   React, TailwindCSS y herramientas de IA para diseño y
                   desarrollo web interactivo.
                 </p>
 
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href="https://sistemas-majovit.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-cyan-500 text-white text-sm font-medium hover:bg-cyan-400 transition-all"
+                  >
+                    Abrir Aplicación
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -424,3 +440,5 @@ const Projects = () => {
 };
 
 export default Projects;
+
+
